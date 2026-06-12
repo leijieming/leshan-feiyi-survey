@@ -3102,9 +3102,7 @@
             // District change generates automatic Project ID
             const districtSelect = document.getElementById('field-district');
             districtSelect.addEventListener('change', () => {
-                if (!editingProjectId) {
-                    autoGenerateProjectId();
-                }
+                autoGenerateProjectId();
             });
 
             // Category change loads category tips
@@ -3336,24 +3334,31 @@
             const code = DISTRICT_CODES[district];
             if (!code) return;
 
-            // Filter projects of this district
-            const districtProjects = projects.filter(p => p.district === district && p.id !== editingProjectId);
-            
-            // Find max sequence number
-            let maxSeq = 0;
-            const regex = new RegExp(`^${code}-(\\d+)$`);
-            
-            districtProjects.forEach(p => {
-                const match = p.id.match(regex);
-                if (match) {
-                    const seq = parseInt(match[1]);
-                    if (seq > maxSeq) maxSeq = seq;
-                }
-            });
+            const idField = document.getElementById('field-id');
+            const currentId = idField.value;
 
-            const nextSeq = maxSeq + 1;
-            const paddedSeq = String(nextSeq).padStart(3, '0');
-            document.getElementById('field-id').value = `${code}-${paddedSeq}`;
+            if (currentId && currentId.includes('-DRAFT-')) {
+                // Keep the draft timestamp but change the district code prefix
+                const parts = currentId.split('-DRAFT-');
+                idField.value = `${code}-DRAFT-${parts[1] || Date.now()}`;
+            } else {
+                // Generate sequential ID (ignoring draft ID patterns)
+                const districtProjects = projects.filter(p => p.district === district && p.id !== editingProjectId && !p.id.includes('-DRAFT-'));
+                let maxSeq = 0;
+                const regex = new RegExp(`^${code}-(\\d+)$`);
+                
+                districtProjects.forEach(p => {
+                    const match = p.id.match(regex);
+                    if (match) {
+                        const seq = parseInt(match[1]);
+                        if (seq > maxSeq) maxSeq = seq;
+                    }
+                });
+
+                const nextSeq = maxSeq + 1;
+                const paddedSeq = String(nextSeq).padStart(3, '0');
+                idField.value = `${code}-${paddedSeq}`;
+            }
         }
 
         // Dynamically add Inheritor card
@@ -4041,8 +4046,8 @@
             const code = DISTRICT_CODES[district] || 'TEMP';
             
             if (isDraft) {
-                // For draft, assign temporary ID if none exists yet
-                if (!id || id.trim() === '') {
+                // For draft, assign temporary ID if none exists yet, or if it is currently a sequential ID
+                if (!id || id.trim() === '' || !id.includes('-DRAFT-')) {
                     id = `${code}-DRAFT-${Date.now()}`;
                     document.getElementById('field-id').value = id;
                 }
