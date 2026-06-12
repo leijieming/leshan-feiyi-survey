@@ -1,0 +1,55 @@
+[
+  {
+    "id": "SW-001",
+    "district": "沙湾区",
+    "districtCode": "SW",
+    "category": "传统技艺",
+    "name": "1",
+    "level": "国家级",
+    "levelBatch": "",
+    "levelNote": "",
+    "protectionUnit": "",
+    "keywords": "",
+    "description": "",
+    "inheritors": [
+      {
+        "name": "1",
+        "level": "国家级",
+        "batch": "",
+        "phone": "1",
+        "isPrimary": true
+      }
+    ],
+    "businessName": "",
+    "businessAddress": "",
+    "hasIP": "否",
+    "ipName": "",
+    "ipCopyright": "",
+    "ipTrademark": "",
+    "products": [],
+    "workshopArea": "",
+    "fullTimeWorkers": "",
+    "tempWorkers": "",
+    "annualOutput": "",
+    "skuCount": "",
+    "salesChannels": [],
+    "annualRevenue": "",
+    "profitModel": [],
+    "profitModelPercentages": {},
+    "cooperationWillingness": "高",
+    "desiredCooperation": [],
+    "moqRequirement": "",
+    "canCustomize": "否",
+    "customizeScope": "",
+    "pastCooperation": "",
+    "painPoints": [],
+    "painPointsExtra": "",
+    "abcRating": [
+      "B级"
+    ],
+    "notes": "",
+    "isDraft": false,
+    "updatedAt": "2026-06-12T18:31:33.429Z",
+    "createdAt": "2026-06-12T18:31:33.429Z"
+  }
+]
