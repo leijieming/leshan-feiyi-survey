@@ -82,5 +82,99 @@
     "isDraft": false,
     "updatedAt": "2026-06-12T18:46:48.464Z",
     "createdAt": "2026-06-12T18:46:48.464Z"
+  },
+  {
+    "id": "EB-001",
+    "district": "峨边彝族自治县",
+    "districtCode": "EB",
+    "category": "传统技艺",
+    "name": "峨眉扎染传统技艺",
+    "level": "省级",
+    "levelBatch": "",
+    "levelNote": "",
+    "protectionUnit": "",
+    "keywords": "夹扎、塔扎、结扎、鱼子缬、融画入染",
+    "description": "峨眉扎染是古代“蜀缬”的活态传承、四川省非物质文化遗产。依托峨眉山草木，以三十余种植物染出绚烂色彩，打破蓝白格局，融画入染。代表作《峨眉山月》《乐山大佛》将山水意境定格于布料，其《鱼子缬》纹样被誉为东方美学典范。",
+    "inheritors": [
+      {
+        "name": "王永清",
+        "level": "省级",
+        "batch": "",
+        "phone": "18781381203",
+        "isPrimary": true
+      },
+      {
+        "name": "刘敏欣",
+        "level": "市级",
+        "batch": "",
+        "phone": "1",
+        "isPrimary": false
+      },
+      {
+        "name": "刘炎灵",
+        "level": "市级",
+        "batch": "",
+        "phone": "1",
+        "isPrimary": false
+      }
+    ],
+    "businessName": "峨眉扎染工坊",
+    "businessAddress": "四川省乐山市市中区306省道苏稽镇刘坝村30号",
+    "hasIP": "是",
+    "ipName": "正在创作",
+    "ipCopyright": "正在创作",
+    "ipTrademark": "正在创作",
+    "products": [],
+    "workshopArea": "2500",
+    "fullTimeWorkers": "5",
+    "tempWorkers": "",
+    "annualOutput": "18000条丝巾",
+    "skuCount": "50",
+    "salesChannels": [
+      {
+        "type": "线下工坊店",
+        "details": {
+          "address": "四川省乐山市市中区306省道苏稽镇刘坝村30号",
+          "syncAddr": "true"
+        }
+      }
+    ],
+    "annualRevenue": "80",
+    "profitModel": [
+      "产品销售",
+      "体验研学",
+      "其他"
+    ],
+    "profitModelPercentages": {
+      "产品销售": 45,
+      "体验研学": 45,
+      "其他": 10
+    },
+    "cooperationWillingness": "高",
+    "desiredCooperation": [
+      "产品代销",
+      "IP授权",
+      "研学体验课程",
+      "品牌联名",
+      "其他"
+    ],
+    "moqRequirement": "方丝巾（年染制50条）、玩偶（50起批）、挂件（20-30起批）",
+    "canCustomize": "是",
+    "customizeScope": "可定制企业Logo、节日主题",
+    "pastCooperation": "必胜客合作开发披萨主题文创，开发盲盒、冰箱贴等年轻化产品",
+    "painPoints": [
+      "不了解新媒体营销",
+      "缺乏外部合作资源",
+      "产品标准化程度低",
+      "缺乏固定销售场所"
+    ],
+    "painPointsExtra": "玩偶制作工艺复杂，需手工缝制+填充，耗时间较长",
+    "abcRating": [
+      "B级"
+    ],
+    "notes": "期待能够政企联动",
+    "isDraft": false,
+    "updatedAt": "2026-06-12T18:54:25.938Z",
+    "createdAt": "2026-06-12T18:54:25.938Z"
   }
 ]
