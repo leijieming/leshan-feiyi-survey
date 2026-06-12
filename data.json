@@ -84,7 +84,7 @@
     "createdAt": "2026-06-12T18:46:48.464Z"
   },
   {
-    "id": "EMS-002",
+    "id": "EMS-001",
     "district": "峨眉山市",
     "districtCode": "EMS",
     "category": "传统技艺",
@@ -174,7 +174,7 @@
     ],
     "notes": "期待能够政企联动",
     "isDraft": false,
-    "updatedAt": "2026-06-12T19:09:01.218Z",
+    "updatedAt": "2026-06-12T19:09:41.487Z",
     "createdAt": "2026-06-12T18:54:25.938Z"
   },
   {
@@ -229,7 +229,7 @@
     "createdAt": "2026-06-12T18:56:27.549Z"
   },
   {
-    "id": "EMS-001",
+    "id": "EMS-DRAFT-1781291356983",
     "district": "峨眉山市",
     "districtCode": "EMS",
     "category": "传统戏剧",
@@ -276,7 +276,7 @@
     "abcRating": [],
     "notes": "",
     "isDraft": true,
-    "updatedAt": "2026-06-12T18:57:17.910Z",
+    "updatedAt": "2026-06-12T19:10:06.250Z",
     "createdAt": "2026-06-12T18:57:17.910Z"
   }
 ]
