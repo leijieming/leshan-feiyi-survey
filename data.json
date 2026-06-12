@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "id": "SZ-001",
+    "district": "市中区",
+    "districtCode": "SZ",
+    "category": "传统技艺",
+    "name": "苏稽香油米花糖制作技艺",
+    "level": "省级",
+    "levelBatch": "",
+    "levelNote": "",
+    "protectionUnit": "",
+    "keywords": "阴米、油砂炒制、酥脆化渣、手工定型",
+    "description": "四川省级非遗“苏稽香油米花糖制作技艺”，以“阴米”“油砂炒制”为核心，成品酥脆化渣、甜而不腻。代表作“苏稽牌”米花糖传承百年，其传统工艺被列入四川省非物质文化遗产名录，享誉嘉州。",
+    "inheritors": [
+      {
+        "name": "张晓群",
+        "level": "省级",
+        "batch": "",
+        "phone": "13628191899",
+        "isPrimary": true
+      }
+    ],
+    "businessName": "乐山市市中区苏稽张吉武米花糖厂",
+    "businessAddress": "乐山市苏稽镇苏中路226号",
+    "hasIP": "否",
+    "ipName": "",
+    "ipCopyright": "无",
+    "ipTrademark": "无",
+    "products": [],
+    "workshopArea": "1709",
+    "fullTimeWorkers": "20",
+    "tempWorkers": "0",
+    "annualOutput": "传统口味米花糖8000件",
+    "skuCount": "30",
+    "salesChannels": [
+      {
+        "type": "线下工坊店",
+        "details": {
+          "address": "",
+          "syncAddr": "false"
+        }
+      },
+      {
+        "type": "抖音",
+        "details": {
+          "accountName": "",
+          "followers": "",
+          "isLive": "是",
+          "monthlyGmv": ""
+        }
+      }
+    ],
+    "annualRevenue": "500",
+    "profitModel": [
+      "产品销售",
+      "代加工"
+    ],
+    "profitModelPercentages": {
+      "产品销售": 90,
+      "代加工": 10
+    },
+    "cooperationWillingness": "高",
+    "desiredCooperation": [
+      "产品代销",
+      "代加工订单"
+    ],
+    "moqRequirement": "100斤起",
+    "canCustomize": "是",
+    "customizeScope": "",
+    "pastCooperation": "",
+    "painPoints": [
+      "产品包装老旧/无包装",
+      "缺乏品牌意识/无注册商标",
+      "产品设计陈旧/缺乏创新",
+      "缺乏固定销售场所"
+    ],
+    "painPointsExtra": "",
+    "abcRating": [
+      "C级"
+    ],
+    "notes": "",
+    "isDraft": false,
+    "updatedAt": "2026-06-12T18:46:48.464Z",
+    "createdAt": "2026-06-12T18:46:48.464Z"
+  }
+]
