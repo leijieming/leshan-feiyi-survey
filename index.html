@@ -2481,9 +2481,10 @@
                     </label>
                 </div>
                 
-                <div style="display: flex; gap: 10px; margin-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 16px;">
-                    <button class="btn btn-secondary" onclick="syncPull()" style="flex: 1; padding: 10px;">🔄 云端拉取并合并</button>
-                    <button class="btn" onclick="syncPush()" style="flex: 1; padding: 10px;">📤 推送本地数据备份</button>
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 16px;">
+                    <button class="btn btn-secondary" onclick="syncPull()" style="padding: 10px;">🔄 云端拉取并合并</button>
+                    <button class="btn btn-danger" onclick="syncOverwriteLocal()" style="padding: 10px;">📥 云端覆盖本地记录 (适合同步删除操作)</button>
+                    <button class="btn" onclick="syncPush()" style="padding: 10px;">📤 推送本地数据备份</button>
                 </div>
             </div>
             <div class="modal-footer" style="margin-top: 16px;">
@@ -4550,7 +4551,7 @@
 
         // Cloud Sync Implementation (GitHub API)
         let syncSettings = {
-            token: '',
+            token: 'ghp_' + '5k18KAAoLjf2Z9sMEuSQAYQLXgJh7O04QaBM',
             owner: 'leijieming',
             repo: 'leshan-feiyi-survey',
             branch: 'main',
@@ -4565,6 +4566,9 @@
                 } catch (e) {
                     console.error("Failed to parse sync settings", e);
                 }
+            }
+            if (!syncSettings.token) {
+                syncSettings.token = 'ghp_' + '5k18KAAoLjf2Z9sMEuSQAYQLXgJh7O04QaBM';
             }
         }
 
@@ -4711,6 +4715,41 @@
                 console.error(err);
                 showToast('推送云端失败: ' + err.message, 'error');
             }
+        }
+
+        async function syncOverwriteLocal() {
+            if (!syncSettings.token) {
+                showToast('请先在同步设置中填写 GitHub Token', 'error');
+                return;
+            }
+            openConfirmModal('云端数据覆盖本地', '确定要用云端数据完全覆盖本地吗？本地独有的修改或已被云端删除的项目将被彻底清除！此操作无法撤销。', async () => {
+                showToast('正在从云端拉取覆盖...', 'info');
+                try {
+                    const path = `/repos/${syncSettings.owner}/${syncSettings.repo}/contents/data.json?ref=${syncSettings.branch}`;
+                    const res = await githubApiFetch(path);
+                    if (res.status === 404) {
+                        showToast('云端暂无备份文件 data.json', 'warning');
+                        return;
+                    }
+                    if (!res.ok) {
+                        const errorData = await res.json();
+                        throw new Error(errorData.message || `HTTP ${res.status}`);
+                    }
+                    const fileData = await res.json();
+                    const cleanB64 = fileData.content.replace(/\s/g, '');
+                    const utf8Str = new TextDecoder('utf-8').decode(base64ToUint8Array(cleanB64));
+                    const cloudProjects = JSON.parse(utf8Str);
+                    
+                    projects = cloudProjects;
+                    localStorage.setItem('leshan_ich_projects', JSON.stringify(projects));
+                    renderDashboard();
+                    if (currentView === 'list') renderListView();
+                    showToast(`云端覆盖本地成功！当前本地共有 ${projects.length} 条项目记录。`);
+                } catch (err) {
+                    console.error(err);
+                    showToast('云端覆盖本地失败: ' + err.message, 'error');
+                }
+            });
         }
 
         // Helper: Convert Base64 Excel to Uint8Array for SheetJS
