@@ -1607,7 +1607,7 @@
         <div class="sidebar-footer">
             <div>委托单位：乐山市文旅局</div>
             <div>承办单位：西南民间非遗研究中心</div>
-            <div style="margin-top: 10px; opacity: 0.6;">版本 v1.3.0 (云端同步版)</div>
+            <div style="margin-top: 10px; opacity: 0.6;">版本 v1.3.1 (云端同步版)</div>
         </div>
     </div>
 
@@ -2571,6 +2571,24 @@
         let editingProjectId = null; // null if creating a new one
         let currentListTab = 'finalized'; // 'finalized' or 'drafts'
 
+        function migrateProjectIds() {
+            let changed = false;
+            projects.forEach(p => {
+                // Correct legacy draft IDs that lack -DRAFT-
+                if (p.isDraft && !p.id.includes('-DRAFT-')) {
+                    const code = DISTRICT_CODES[p.district] || 'TEMP';
+                    const oldId = p.id;
+                    const randomSuffix = Math.floor(Math.random() * 1000);
+                    p.id = `${code}-DRAFT-${Date.now() + randomSuffix}`;
+                    console.log(`Migrated legacy draft ID: ${oldId} -> ${p.id}`);
+                    changed = true;
+                }
+            });
+            if (changed) {
+                localStorage.setItem('leshan_ich_projects', JSON.stringify(projects));
+            }
+        }
+
         // Chart instances
         let districtChartInstance = null;
         let abcChartInstance = null;
@@ -2585,6 +2603,7 @@
             if (stored) {
                 try {
                     projects = JSON.parse(stored);
+                    migrateProjectIds();
                 } catch(e) {
                     console.error("Failed to parse stored projects", e);
                     projects = [];
@@ -3343,7 +3362,7 @@
                 idField.value = `${code}-DRAFT-${parts[1] || Date.now()}`;
             } else {
                 // Generate sequential ID (ignoring draft ID patterns)
-                const districtProjects = projects.filter(p => p.district === district && p.id !== editingProjectId && !p.id.includes('-DRAFT-'));
+                const districtProjects = projects.filter(p => p.district === district && p.id !== editingProjectId && !p.id.includes('-DRAFT-') && !p.isDraft);
                 let maxSeq = 0;
                 const regex = new RegExp(`^${code}-(\\d+)$`);
                 
@@ -3896,10 +3915,23 @@
         }
 
         function startEditSurvey(projectId) {
-            const project = projects.find(p => p.id === projectId);
+            let project = projects.find(p => p.id === projectId);
             if (!project) {
                 showToast('找不到对应的项目记录', 'error');
                 return;
+            }
+
+            // Legacy draft ID migration on load of edit form
+            if (project.isDraft && !project.id.includes('-DRAFT-')) {
+                const code = DISTRICT_CODES[project.district] || 'TEMP';
+                const newId = `${code}-DRAFT-${Date.now()}`;
+                const idx = projects.findIndex(p => p.id === projectId);
+                if (idx > -1) {
+                    projects[idx].id = newId;
+                    localStorage.setItem('leshan_ich_projects', JSON.stringify(projects));
+                }
+                projectId = newId;
+                project = projects[idx];
             }
 
             editingProjectId = projectId;
@@ -3908,6 +3940,17 @@
             // Step 1 values
             document.getElementById('field-district').value = project.district;
             document.getElementById('field-id').value = project.id;
+            
+            // Check if ID prefix matches district code
+            const code = DISTRICT_CODES[project.district];
+            const hasDraftPattern = project.id.includes('-DRAFT-');
+            const expectedPrefix = hasDraftPattern ? `${code}-DRAFT-` : `${code}-`;
+            if (code && !project.id.startsWith(expectedPrefix)) {
+                autoGenerateProjectId();
+                const newId = document.getElementById('field-id').value;
+                showToast(`检测到地区与项目ID不符，已自动校正为: ${newId}`, 'info');
+            }
+
             document.getElementById('field-category').value = project.category;
             // Force triggers the category tips reload
             document.getElementById('field-category').dispatchEvent(new Event('change'));
@@ -4054,7 +4097,7 @@
             } else {
                 // For finalized project, generate permanent serial ID if it is empty or currently a draft ID
                 if (!id || id.trim() === '' || id.includes('-DRAFT-')) {
-                    const districtProjects = projects.filter(p => p.district === district && !p.id.includes('-DRAFT-') && p.id !== editingProjectId);
+                    const districtProjects = projects.filter(p => p.district === district && !p.id.includes('-DRAFT-') && !p.isDraft && p.id !== editingProjectId);
                     let maxSeq = 0;
                     const regex = new RegExp(`^${code}-(\\d+)$`);
                     districtProjects.forEach(p => {
