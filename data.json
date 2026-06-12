@@ -85,8 +85,8 @@
   },
   {
     "id": "EB-001",
-    "district": "峨边彝族自治县",
-    "districtCode": "EB",
+    "district": "峨眉山市",
+    "districtCode": "EMS",
     "category": "传统技艺",
     "name": "峨眉扎染传统技艺",
     "level": "省级",
@@ -174,7 +174,7 @@
     ],
     "notes": "期待能够政企联动",
     "isDraft": false,
-    "updatedAt": "2026-06-12T18:54:25.938Z",
+    "updatedAt": "2026-06-12T18:57:48.521Z",
     "createdAt": "2026-06-12T18:54:25.938Z"
   },
   {
@@ -227,5 +227,56 @@
     "isDraft": true,
     "updatedAt": "2026-06-12T18:56:27.549Z",
     "createdAt": "2026-06-12T18:56:27.549Z"
+  },
+  {
+    "id": "EMS-001",
+    "district": "峨眉山市",
+    "districtCode": "EMS",
+    "category": "传统戏剧",
+    "name": "峨眉象城演艺中心",
+    "level": "国家级",
+    "levelBatch": "",
+    "levelNote": "",
+    "protectionUnit": "",
+    "keywords": "",
+    "description": "",
+    "inheritors": [
+      {
+        "name": "",
+        "level": "国家级",
+        "batch": "",
+        "phone": "",
+        "isPrimary": true
+      }
+    ],
+    "businessName": "",
+    "businessAddress": "",
+    "hasIP": "否",
+    "ipName": "",
+    "ipCopyright": "",
+    "ipTrademark": "",
+    "products": [],
+    "workshopArea": "",
+    "fullTimeWorkers": "",
+    "tempWorkers": "",
+    "annualOutput": "",
+    "skuCount": "",
+    "salesChannels": [],
+    "annualRevenue": "",
+    "profitModel": [],
+    "profitModelPercentages": {},
+    "cooperationWillingness": "高",
+    "desiredCooperation": [],
+    "moqRequirement": "",
+    "canCustomize": "否",
+    "customizeScope": "",
+    "pastCooperation": "",
+    "painPoints": [],
+    "painPointsExtra": "",
+    "abcRating": [],
+    "notes": "",
+    "isDraft": true,
+    "updatedAt": "2026-06-12T18:57:17.910Z",
+    "createdAt": "2026-06-12T18:57:17.910Z"
   }
 ]
