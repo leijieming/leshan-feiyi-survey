@@ -235,10 +235,37 @@
     "tempWorkers": "60",
     "annualOutput": "",
     "skuCount": "",
-    "salesChannels": [],
+    "salesChannels": [
+      {
+        "type": "线下工坊店",
+        "details": {
+          "address": "四川省乐山市峨眉山市胜利街道象城2栋",
+          "syncAddr": "true"
+        }
+      },
+      {
+        "type": "抖音",
+        "details": {
+          "accountName": "峨眉武传",
+          "followers": "3.5",
+          "isLive": "是",
+          "monthlyGmv": ""
+        }
+      },
+      {
+        "type": "其他",
+        "details": {
+          "customDetails": "小红书（峨眉武传、峨眉武术国家级非遗传承人）"
+        }
+      }
+    ],
     "annualRevenue": "",
-    "profitModel": [],
-    "profitModelPercentages": {},
+    "profitModel": [
+      "体验研学"
+    ],
+    "profitModelPercentages": {
+      "体验研学": 0
+    },
     "cooperationWillingness": "高",
     "desiredCooperation": [
       "研学体验课程",
@@ -254,7 +281,7 @@
     "abcRating": [],
     "notes": "",
     "isDraft": true,
-    "updatedAt": "2026-06-13T06:40:45.091Z",
+    "updatedAt": "2026-06-13T06:45:11.862Z",
     "createdAt": "2026-06-12T18:56:27.549Z"
   },
   {
