@@ -231,8 +231,8 @@
       }
     ],
     "workshopArea": "",
-    "fullTimeWorkers": "",
-    "tempWorkers": "",
+    "fullTimeWorkers": "90",
+    "tempWorkers": "60",
     "annualOutput": "",
     "skuCount": "",
     "salesChannels": [],
@@ -250,7 +250,7 @@
     "abcRating": [],
     "notes": "",
     "isDraft": true,
-    "updatedAt": "2026-06-13T06:28:24.421Z",
+    "updatedAt": "2026-06-13T06:29:55.020Z",
     "createdAt": "2026-06-12T18:56:27.549Z"
   },
   {
