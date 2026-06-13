@@ -191,10 +191,10 @@
     "description": "",
     "inheritors": [
       {
-        "name": "",
+        "name": "1",
         "level": "国家级",
         "batch": "",
-        "phone": "",
+        "phone": "1",
         "isPrimary": true
       }
     ],
@@ -225,7 +225,7 @@
     "abcRating": [],
     "notes": "",
     "isDraft": true,
-    "updatedAt": "2026-06-12T19:13:22.397Z",
+    "updatedAt": "2026-06-13T02:22:56.596Z",
     "createdAt": "2026-06-12T18:56:27.549Z"
   },
   {
