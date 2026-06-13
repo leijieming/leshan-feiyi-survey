@@ -187,19 +187,26 @@
     "levelBatch": "第五批",
     "levelNote": "",
     "protectionUnit": "",
-    "keywords": "",
+    "keywords": "核心技术持有者、传承教学、广泛弟子网络、器械制造技艺",
     "description": "",
     "inheritors": [
       {
-        "name": "1",
+        "name": "王超",
         "level": "国家级",
         "batch": "",
         "phone": "1",
         "isPrimary": true
+      },
+      {
+        "name": "王敏",
+        "level": "国家级",
+        "batch": "",
+        "phone": "18048651221",
+        "isPrimary": false
       }
     ],
-    "businessName": "",
-    "businessAddress": "",
+    "businessName": "峨眉精武馆",
+    "businessAddress": "四川省乐山市峨眉山市胜利街道象城2栋",
     "hasIP": "否",
     "ipName": "",
     "ipCopyright": "",
@@ -225,7 +232,7 @@
     "abcRating": [],
     "notes": "",
     "isDraft": true,
-    "updatedAt": "2026-06-13T02:22:56.596Z",
+    "updatedAt": "2026-06-13T05:16:14.459Z",
     "createdAt": "2026-06-12T18:56:27.549Z"
   },
   {
