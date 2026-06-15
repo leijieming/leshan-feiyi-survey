@@ -285,7 +285,7 @@
     ],
     "notes": "主打传承，课程走低价多量，传承人的初心。",
     "isDraft": false,
-    "updatedAt": "2026-06-13T06:53:52.437Z",
+    "updatedAt": "2026-06-15T01:37:22.713Z",
     "createdAt": "2026-06-12T18:56:27.549Z"
   },
   {
@@ -298,45 +298,85 @@
     "levelBatch": "",
     "levelNote": "",
     "protectionUnit": "",
-    "keywords": "",
-    "description": "",
+    "keywords": "非遗传承、坚守初心",
+    "description": "川西文化融合（大木偶、地狱融合） 小而精致的非遗展演。",
     "inheritors": [
       {
-        "name": "",
+        "name": "1",
         "level": "国家级",
         "batch": "",
-        "phone": "",
+        "phone": "1",
         "isPrimary": true
+      },
+      {
+        "name": "骆玉芳",
+        "level": "国家级",
+        "batch": "",
+        "phone": "18780210441",
+        "isPrimary": false
       }
     ],
     "businessName": "",
     "businessAddress": "",
     "hasIP": "否",
     "ipName": "",
-    "ipCopyright": "",
+    "ipCopyright": "注册专利、部分节目（小节目注册过）想做和能力",
     "ipTrademark": "",
-    "products": [],
-    "workshopArea": "",
-    "fullTimeWorkers": "",
-    "tempWorkers": "",
-    "annualOutput": "",
-    "skuCount": "",
-    "salesChannels": [],
+    "products": [
+      {
+        "name": "木偶",
+        "price": "1",
+        "spec": "",
+        "material": "",
+        "moq": "1",
+        "weight": "",
+        "channel": "",
+        "onlineLink": "",
+        "cycle": "",
+        "customizable": "是",
+        "copyright": "",
+        "monthlySales": "",
+        "sellingPoints": "",
+        "intro": "",
+        "note": ""
+      }
+    ],
+    "workshopArea": "3000",
+    "fullTimeWorkers": "100",
+    "tempWorkers": "10",
+    "annualOutput": "乐乐的朋友，做起来，引进别人文创",
+    "skuCount": "3",
+    "salesChannels": [
+      {
+        "type": "其他",
+        "details": {
+          "customDetails": "携程、小红书、美团，旅行社+线上线下，"
+        }
+      }
+    ],
     "annualRevenue": "",
-    "profitModel": [],
-    "profitModelPercentages": {},
+    "profitModel": [
+      "其他"
+    ],
+    "profitModelPercentages": {
+      "其他": 0
+    },
     "cooperationWillingness": "高",
     "desiredCooperation": [],
     "moqRequirement": "",
     "canCustomize": "否",
     "customizeScope": "",
-    "pastCooperation": "",
-    "painPoints": [],
-    "painPointsExtra": "",
+    "pastCooperation": "38节、文旅节、亲子票、特定节点 特定人群免票。",
+    "painPoints": [
+      "缺乏资金扩大生产",
+      "知识产权保护意识薄弱",
+      "缺乏固定销售场所"
+    ],
+    "painPointsExtra": "文创，没有对标制作。周边没有纪念的产品。运营（纯视频，自己创作。） 旺季2-3场。",
     "abcRating": [],
-    "notes": "",
+    "notes": "外宾团队多。音乐原创、舞美、灯光都是原创的。",
     "isDraft": true,
-    "updatedAt": "2026-06-12T19:10:06.250Z",
+    "updatedAt": "2026-06-13T08:51:06.540Z",
     "createdAt": "2026-06-12T18:57:17.910Z"
   },
   {
