@@ -366,64 +366,123 @@
     "createdAt": "2026-06-12T18:56:27.549Z"
   },
   {
-    "id": "EMS-DRAFT-1781291356983",
+    "id": "EMS-003",
     "district": "峨眉山市",
     "districtCode": "EMS",
     "category": "传统戏剧",
     "name": "峨眉象城演艺中心",
-    "level": "国家级",
-    "levelBatch": "",
-    "levelNote": "",
-    "protectionUnit": "",
-    "keywords": "非遗传承、坚守初心",
-    "description": "川西文化融合（大木偶、地狱融合） 小而精致的非遗展演。",
+    "level": "市级",
+    "levelBatch": "无",
+    "levelNote": "无",
+    "protectionUnit": "未纰漏",
+    "keywords": "川剧变脸、川剧滚灯、吐火、峨眉武术、川北大木偶长绸舞、长嘴壶茶艺、非遗融合演艺、沉浸式观演",
+    "description": "《圣象峨眉》是 2010 年正式开演的大型经典旅游演艺，以巴蜀文化与峨眉地域文化为核心内核，打造 “幻、雅、灵、蜀、刚、梦、禅” 七大篇章，将川剧变脸、滚灯、吐火、峨眉武术、川北大木偶长绸舞、长嘴壶茶艺等 12 项非遗技艺有机融入剧情，是峨眉山文旅融合的标志性成果。项目开演至今累计演出超 8000 场，核心演艺团队扎根峨眉山超 20 年，累计演出上万场；先后斩获 “金熊猫” 奖、四川省优秀旅游演出奖、首届四川省优秀旅游演出前十强等荣誉，数次登上央视及地方卫视舞台，核心非遗节目川北大木偶出访全球 50 余个国家并斩获国际奖项，被誉为四川非遗文化传承 “活化石”。项目全年常态化演出，淡季日均 1 场，旺季日均 2-3 场，是乐山入境游与大众文旅市场的核心演艺产品。运营超 16 年的成熟文旅 IP，坚守非遗技艺本真性，未做过度商业化改编\n外宾客群占比突出，覆盖东南亚、欧美、澳新等多地入境游客\n乐山市文旅标志性演艺、峨眉山旅游必看项目",
     "inheritors": [
       {
-        "name": "1",
-        "level": "国家级",
-        "batch": "",
+        "name": "杨波",
+        "level": "无级别",
+        "batch": "川剧滚灯",
         "phone": "1",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "name": "骆玉芳",
-        "level": "国家级",
+        "level": "无级别",
         "batch": "",
         "phone": "18780210441",
-        "isPrimary": false
+        "isPrimary": true
       }
     ],
-    "businessName": "",
-    "businessAddress": "",
-    "hasIP": "否",
-    "ipName": "",
-    "ipCopyright": "注册专利、部分节目（小节目注册过）想做和能力",
-    "ipTrademark": "",
+    "businessName": "圣象峨眉剧场",
+    "businessAddress": "四川省乐山市峨眉山市象城",
+    "hasIP": "是",
+    "ipName": "圣象峨眉",
+    "ipCopyright": "核心节目（如木偶长绸舞、滚灯经典片段）已做版权登记，整台剧目申请了相关专利；整体视听版权、衍生版权体系待完善",
+    "ipTrademark": "未完成全品类商标注册",
     "products": [
       {
-        "name": "木偶",
-        "price": "1",
-        "spec": "",
+        "name": "票务服务",
+        "price": "280",
+        "spec": "单人单次入场",
         "material": "",
         "moq": "1",
         "weight": "",
-        "channel": "",
-        "onlineLink": "",
-        "cycle": "",
+        "channel": "剧场窗口、旅行社、携程 / 美团 / 同程等线上平台、峨眉山景区票务渠道",
+        "onlineLink": "线上平台搜索“圣象峨眉”",
+        "cycle": "0",
         "customizable": "是",
-        "copyright": "",
-        "monthlySales": "",
+        "copyright": "核心演出节目有版权",
+        "monthlySales": "淡季约 9000 张/月，旺季约 20000 张/月",
         "sellingPoints": "",
         "intro": "",
+        "note": ""
+      },
+      {
+        "name": "圣象峨眉文化扇",
+        "price": "30",
+        "spec": "25*4*4",
+        "material": "",
+        "moq": "1",
+        "weight": "130",
+        "channel": "线下工坊",
+        "onlineLink": "无",
+        "cycle": "20",
+        "customizable": "是",
+        "copyright": "无",
+        "monthlySales": "10",
+        "sellingPoints": "纪念、文化扇周边",
+        "intro": "印有圣象峨眉字样的文化扇",
+        "note": ""
+      },
+      {
+        "name": "圣象峨眉演出纪念袋",
+        "price": "30",
+        "spec": "30*30",
+        "material": "",
+        "moq": "1",
+        "weight": "200",
+        "channel": "线下门店",
+        "onlineLink": "无",
+        "cycle": "20",
+        "customizable": "是",
+        "copyright": "无",
+        "monthlySales": "10",
+        "sellingPoints": "纪念、帆布袋周边",
+        "intro": "印有圣象峨眉字样的帆布袋",
         "note": ""
       }
     ],
     "workshopArea": "3000",
     "fullTimeWorkers": "100",
-    "tempWorkers": "10",
-    "annualOutput": "乐乐的朋友，做起来，引进别人文创",
+    "tempWorkers": "20",
+    "annualOutput": "年演出约 400 场；单场最大承载观众 800 余人，淡季单场均 300 余人，旺季单场基本满座",
     "skuCount": "3",
     "salesChannels": [
+      {
+        "type": "淘宝",
+        "details": {
+          "shopName": "",
+          "shopLink": "",
+          "monthlySales": "",
+          "primaryProduct": ""
+        }
+      },
+      {
+        "type": "抖音",
+        "details": {
+          "accountName": "",
+          "followers": "",
+          "isLive": "是",
+          "monthlyGmv": ""
+        }
+      },
+      {
+        "type": "微店/小程序",
+        "details": {
+          "shopName": "",
+          "shopLink": ""
+        }
+      },
       {
         "type": "其他",
         "details": {
@@ -439,21 +498,26 @@
       "其他": 0
     },
     "cooperationWillingness": "高",
-    "desiredCooperation": [],
-    "moqRequirement": "",
-    "canCustomize": "否",
-    "customizeScope": "",
-    "pastCooperation": "38节、文旅节、亲子票、特定节点 特定人群免票。",
+    "desiredCooperation": [
+      "IP授权",
+      "品牌联名"
+    ],
+    "moqRequirement": "20",
+    "canCustomize": "是",
+    "customizeScope": "专场包场演出、定制化节目编排、企业团建主题活动、研学专属路线、非遗体验环节定制、外宾专属版本 可根据合作方需求灵活调整演出内容与体验环节",
+    "pastCooperation": "1. 文旅渠道合作：与四川全境旅行社长期深度合作，纳入峨眉山旅游常规线路；与峨眉山景区联动票务销售，覆盖国内外上百家组团社。2. 媒体与荣誉合作：数次登上央视、地方卫视文旅节目，斩获 “金熊猫”、四川省优秀旅游演出前十强等多项行业荣誉。3. 国际文化交流：核心非遗节目川北大木偶出访全球 50 余个国家，获多项国际表演奖项，常年接待入境游外宾团队，是巴蜀文化对外输出的重要载体。4. 本地惠民合作：三八节、教师节、五一等节点推出市民特惠票、特定人群免票等惠民活动，联动本地文旅市场。5.已与乐山乐乐的朋友达成合作，引进他人IP售卖，并无销售本身IP的意愿。",
     "painPoints": [
       "缺乏资金扩大生产",
       "知识产权保护意识薄弱",
       "缺乏固定销售场所"
     ],
     "painPointsExtra": "文创，没有对标制作。周边没有纪念的产品。运营（纯视频，自己创作。） 旺季2-3场。",
-    "abcRating": [],
-    "notes": "外宾团队多。音乐原创、舞美、灯光都是原创的。",
-    "isDraft": true,
-    "updatedAt": "2026-06-13T08:51:06.540Z",
+    "abcRating": [
+      "B级"
+    ],
+    "notes": "乐山文旅标杆项目，运营成熟、非遗融合度高、客流稳定、品牌认知度高，具备极高的创新转化潜力。项目核心团队坚守非遗本真性，所有非遗技艺均严格遵循传统范式呈现，未为商业化做过度改编；外宾客群基础深厚，具备成熟的国际传播与接待能力。",
+    "isDraft": false,
+    "updatedAt": "2026-06-23T16:34:59.346Z",
     "createdAt": "2026-06-12T18:57:17.910Z"
   },
   {
