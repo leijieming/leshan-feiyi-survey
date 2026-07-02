@@ -1570,7 +1570,7 @@
     "createdAt": "2026-07-01T15:50:27.819Z"
   },
   {
-    "id": "EMS-DRAFT-1783002663907",
+    "id": "EMS-005",
     "district": "峨眉山市",
     "districtCode": "EMS",
     "category": "传统技艺",
@@ -1583,25 +1583,67 @@
     "description": "龙池白酒，是由峨眉山水与川人匠心共同写就，是“自然生态窖藏”与“活态记忆传承”",
     "inheritors": [
       {
-        "name": "",
-        "level": "国家级",
+        "name": "王举超",
+        "level": "无级别",
         "batch": "",
-        "phone": "",
+        "phone": "暂无",
+        "isPrimary": false
+      },
+      {
+        "name": "王建林",
+        "level": "无级别",
+        "batch": "",
+        "phone": "13398255000",
         "isPrimary": true
       }
     ],
-    "businessName": "",
+    "businessName": "峨眉山龙池酒业有限公司",
     "businessAddress": "",
-    "hasIP": "否",
+    "hasIP": "是",
     "ipName": "",
     "ipCopyright": "",
     "ipTrademark": "",
-    "products": [],
+    "products": [
+      {
+        "name": "龙池·复刻",
+        "price": "188",
+        "spec": "500ml",
+        "material": "",
+        "moq": "/",
+        "weight": "500",
+        "channel": "",
+        "onlineLink": "",
+        "cycle": "",
+        "customizable": "是",
+        "copyright": "有，申请号CN202230077831.4",
+        "monthlySales": "",
+        "sellingPoints": "复刻，一个时代的记忆",
+        "intro": "固态法白酒、清香型白酒、52%VOL",
+        "note": ""
+      },
+      {
+        "name": "龙池·1981",
+        "price": "519",
+        "spec": "",
+        "material": "",
+        "moq": "/",
+        "weight": "",
+        "channel": "",
+        "onlineLink": "",
+        "cycle": "",
+        "customizable": "是",
+        "copyright": "",
+        "monthlySales": "",
+        "sellingPoints": "",
+        "intro": "",
+        "note": ""
+      }
+    ],
     "workshopArea": "",
     "fullTimeWorkers": "",
     "tempWorkers": "",
     "annualOutput": "",
-    "skuCount": "",
+    "skuCount": "12",
     "salesChannels": [],
     "annualRevenue": "",
     "profitModel": [],
@@ -1614,10 +1656,12 @@
     "pastCooperation": "",
     "painPoints": [],
     "painPointsExtra": "",
-    "abcRating": [],
+    "abcRating": [
+      "A级"
+    ],
     "notes": "",
-    "isDraft": true,
-    "updatedAt": "2026-07-02T14:31:03.907Z",
+    "isDraft": false,
+    "updatedAt": "2026-07-02T14:53:51.671Z",
     "createdAt": "2026-07-02T14:31:03.907Z"
   }
 ]
